@@ -10,6 +10,7 @@
 int main(void)
 {
 	int i, length = 12;
+
 	string, int  password[length + 1];
 
 	srand(time(NULL));
@@ -17,11 +18,11 @@ int main(void)
 	for (i = 0; i < length; i++)
 	{
 		if (i % 3 == 0)
-			password[i] = rand() % 10 + '0'; /* digit */
+			password[i] = rand() % 10 + '0';
 		else if (i % 3 == 1)
-			password[i] = rand() % 26 + 'a'; /* lowercase letter */
+			password[i] = rand() % 26 + 'a';
 		else
-			password[i] = rand() % 26 + 'A'; /* uppercase letter */
+			password[i] = rand() % 26 + 'A';
 	}
 
 	password[length] = '\0';
