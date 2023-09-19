@@ -2,8 +2,12 @@
 
 /**
  * _puts - Prints a string followed by a new line to stdout.
- * @str: A pointer to a string to be printed.
+ *
+ * @str: string parametr to print
+ *
+ * Return: Nothing
  */
+
 void _puts(char *str)
 {
 	while (*str != '\0')
