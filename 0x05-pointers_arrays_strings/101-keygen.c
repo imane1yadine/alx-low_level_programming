@@ -3,30 +3,30 @@
 #include <time.h>
 
 /**
- * main - Password generator
+ * main - generates a random password for 101-crackme
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	int password_length = 10;
-	char password[11];
+	int i, length = 12;
+	char password[length + 1];
 
-	srand(time(0));
+	srand(time(NULL));
 
-	while (1)
+	for (i = 0; i < length; i++)
 	{
-		for (int i = 0; i < password_length; i++)
-		{
-			password[i] = rand() % 94 + 33;
-		}
-		password[password_length] = '\0';
-		if
-		{
-			printf("%s\n", password);
-			break;
-		}
+		if (i % 3 == 0)
+			password[i] = rand() % 10 + '0'; /* digit */
+		else if (i % 3 == 1)
+			password[i] = rand() % 26 + 'a'; /* lowercase letter */
+		else
+			password[i] = rand() % 26 + 'A'; /* uppercase letter */
 	}
+
+	password[length] = '\0';
+
+	printf("%s", password);
 
 	return (0);
 }
