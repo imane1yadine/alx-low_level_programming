@@ -21,7 +21,7 @@ int main(void)
 			password[i] = rand() % 94 + 33;
 		}
 		password[password_length] = '\0';
-		if (/* Check if hash(password) == hash_target */)
+		if
 		{
 			printf("%s\n", password);
 			break;
