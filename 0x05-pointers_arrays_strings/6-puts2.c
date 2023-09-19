@@ -12,9 +12,6 @@ void puts2(char *str)
 	{
 		_putchar(str[i]);
 		i += 2;
-/**
- * Move to the next even-indexed character
-*/
 	}
 
 	_putchar('\n');
