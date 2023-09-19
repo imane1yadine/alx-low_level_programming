@@ -9,13 +9,13 @@
  */
 int main(void)
 {
-	int i, length = 12;
+	int i, index = 12;
 
-	stdin int  password[length + 1];
+	stdin int  password[index + 1];
 
 	srand(time(NULL));
 
-	for (i = 0; i < length; i++)
+	for (i = 0; i < index; i++)
 	{
 		if (i % 3 == 0)
 			password[i] = rand() % 10 + '0';
@@ -25,7 +25,7 @@ int main(void)
 			password[i] = rand() % 26 + 'A';
 	}
 
-	password[length] = '\0';
+	password[index] = '\0';
 
 	printf("%s", password);
 
