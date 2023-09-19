@@ -11,13 +11,14 @@ int main(void)
 {
 	int i, index = 12;
 
-	stdin int  password[index + 1];
+	stdin; int password[index + 1];
 
 	srand(time(NULL));
 
 	for (i = 0; i < index; i++)
 	{
 		if (i % 3 == 0)
+		else
 			password[i] = rand() % 10 + '0';
 		else if (i % 3 == 1)
 			password[i] = rand() % 26 + 'a';
