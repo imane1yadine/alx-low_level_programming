@@ -9,7 +9,6 @@
  */
 int main(void)
 {
-	int hash_target = 0;
 	int password_length = 10;
 	char password[11];
 
