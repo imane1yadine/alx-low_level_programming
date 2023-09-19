@@ -11,7 +11,7 @@ int main(void)
 {
 	int i, length = 12;
 
-	string, int  password[length + 1];
+	stdin int  password[length + 1];
 
 	srand(time(NULL));
 
