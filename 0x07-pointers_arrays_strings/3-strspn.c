@@ -11,10 +11,6 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	if (*accept == '\0')
-	{
-		return (0);
-	}
 	unsigned int count = 0;
 	int found;
 
