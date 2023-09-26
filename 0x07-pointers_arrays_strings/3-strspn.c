@@ -30,7 +30,6 @@ unsigned int _strspn(char *s, char *accept)
 		if (!found)
 			break;
 		s++;
-		accept = accept - count;
 	}
 
 	return (count);
