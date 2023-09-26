@@ -5,16 +5,15 @@
  * print_chessboard - prints the chessboard
  * @a: 2D array representing the chessboard
  */
+
 void print_chessboard(char (*a)[8])
 {
-	int row, col;
+	int i, j;
 
-	for (row = 0; row < 8; row++)
-	{
-		for (col = 0; col < 8; col++)
-		{
-			_putchar(a[row][col]);
+	for (i = 0; i < 8; i++) {
+		for (j = 0; j < 8; j++) {
+			printf("%c", a[i][j]);
 		}
-		_putchar('\n');
+		printf("\n");
 	}
 }
