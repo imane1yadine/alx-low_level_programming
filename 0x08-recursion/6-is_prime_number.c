@@ -5,6 +5,16 @@
  * @n: The number to check.
  * Return: 1 if n is prime, 0 otherwise.
  */
+int is_prime_number(int n);
+
+/**
+ * check_prime - Helper function to check for primality using recursion.
+ * @n: The number to check for primality.
+ * @divisor: The current divisor to test.
+ * Return: 1 if n is prime, 0 otherwise.
+ */
+int check_prime(int n, int divisor);
+
 int is_prime_number(int n)
 {
 	if (n <= 1)
@@ -13,12 +23,6 @@ int is_prime_number(int n)
 	return (check_prime(n, 2));
 }
 
-/**
- * check_prime - Helper function to check for primality using recursion.
- * @n: The number to check for primality.
- * @divisor: The current divisor to test.
- * Return: 1 if n is prime, 0 otherwise.
- */
 int check_prime(int n, int divisor)
 {
 	if (divisor * divisor > n)
