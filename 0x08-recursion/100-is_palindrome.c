@@ -9,6 +9,18 @@
 int is_palindrome(char *s)
 {
 	int len = 0;
-	int i;
 
+	while (s[len] != '\0')
+		len++;
+
+	if (len <= 1)
+		return (1);
+
+	if (s[0] != s[len - 1])
+		return (0);
+
+	if (!is_palindrome(s + 1))
+		return (0);
+
+	return (1);
 }
