@@ -10,6 +10,7 @@
  *         Otherwise, returns a pointer to the allocated array.
  */
 
+
 char *create_array(unsigned int size, char c)
 {
 	if (size == 0)
