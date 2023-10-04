@@ -8,16 +8,15 @@
  * Return: A pointer to a new string containing the concatenated arguments,
  *         or NULL if it fails.
  */
+
 char *argstostr(int ac, char **av)
 {
-	if (ac == 0 || av == NULL)
-		return (NULL);
-
 	int i, j, total_length = 0;
 	char *result, *temp;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
+
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j]; j++)
